@@ -8,7 +8,6 @@ def solve(l, b):
     while(l<=b):
         l = l*3
         b = b*2
-        print(l,b)
         years += 1
     return years  
 
