@@ -1,12 +1,11 @@
-print(int(4.2))
 
-# dictionary
-# class_list = dict() 
-# data = input('Enter name & score separated by ":" ') 
-# temp = data.split(':') class_list[temp[0]] = int(temp[1])  
+def WordSplit(strArr):
+    for i in range(1,len(strArr)-1):
+        for j in range(0, len(strArr[0])-1):
+            if strArr[0][:j] in strArr[i]:
+                print(strArr[0][:j])
+        
 
-# OR
+print(WordSplit(["baseball", "a,all,b,ball,bas,base,cat,code,d,e,quit,z"]))
+  
 
-# key = input("Enter key") 
-# value = input("Enter value") 
-# class_list[key] = [value] 
